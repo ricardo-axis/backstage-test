@@ -1,9 +1,20 @@
 apiVersion: backstage.io/v1alpha1
-kind: Location
+kind: API
 metadata:
-  name: kateterport-location
-  description: Entidades do BFF do Kateterport
+  name: kateterport-bff-api
+  description: Kateterport BFF Swagger API
+  tags:
+    - bff
+    - swagger
+  annotations:
+    backstage.io/definition-location: url:https://kateterport-bff.sand-fintech.com/swagger/v1/swagger.json
 spec:
-  targets:
-    - ./component.yaml
-    - ./api.yaml
+  type: openapi
+  lifecycle: production
+  owner: team-kateterport
+  definition: |
+    openapi: 3.0.1
+    info:
+      title: Kateterport BFF API
+      version: "1.0"
+    paths: {}
