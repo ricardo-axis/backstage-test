@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: kateterport-bff-api
+  description: Kateterport BFF API
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-name
+  definition:
+    $text: ./api.yaml
