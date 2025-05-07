@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-kateterport
+  description: Equipe responsável pelo Kateterport
+spec:
+  type: team
+  profile:
+    displayName: Time Kateterport
+  members: []
