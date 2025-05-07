@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: kateterport-bff-api
+  description: API BFF do Kateterport
+  tags:
+    - swagger
+    - bff
+spec:
+  type: openapi
+  lifecycle: production
+  owner: equipe-kateter
+  definition:
+    $openapi: https://kateterport-bff.sand-fintech.com/swagger/v1/swagger.json

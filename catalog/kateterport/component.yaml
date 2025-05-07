@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: kateterport-bff
+  description: Microserviço Backend-for-Frontend (BFF) do Kateterport
+spec:
+  type: service
+  lifecycle: production
+  owner: equipe-kateter
+  providesApis:
+    - kateterport-bff-api
