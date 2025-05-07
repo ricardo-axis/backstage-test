@@ -12,6 +12,9 @@ spec:
   type: openapi
   lifecycle: production
   owner: team-kateterport
+  targets:
+    - ./component.yaml
+    - ./api.yaml
   definition: |
     openapi: 3.0.1
     info:
