@@ -2,10 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: team-kateterport
-  description: Time responsável pelo KateterPort BFF
+  description: Equipe responsável pelo KateterPort
 spec:
   type: team
   profile:
-    displayName: KateterPort Team
-    email: kateterport@empresa.com
-  children: []  # 👈 obrigatório, mesmo que vazio
+    displayName: Time KateterPort
+  children: []

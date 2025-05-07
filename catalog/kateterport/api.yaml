@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: kateterport-bff-api
+  title: KateterPort BFF API
   description: API do serviço KateterPort BFF
   tags:
     - bff
@@ -11,16 +12,5 @@ spec:
   type: openapi
   lifecycle: production
   owner: group:default/team-kateterport
-  definition: |
-    openapi: 3.0.1
-    info:
-      title: KateterPort BFF API
-      version: 1.0.0
-      description: API gerada a partir do Swagger do serviço KateterPort BFF
-    paths:
-      /health:
-        get:
-          summary: Endpoint de verificação de status
-          responses:
-            '200':
-              description: Serviço disponível
+  definition:
+    $text: https://kateterport-bff.sand-fintech.com/swagger/v1/swagger.json
